@@ -1,0 +1,12 @@
+﻿@inject TimeService ZamanServisi
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Saat: @ZamanServisi.GetTime().ToString("HH:mm:ss.fffffff") (View Üzerinde Enjeksiyon)</h1>
+<h1>Saat: @ViewBag.Saat (Controller Üzerinde Enjeksiyon)</h1>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
